@@ -15,6 +15,7 @@ Patch0:		%{name}-include.patch
 Patch1:		%{name}-DESTDIR.patch
 Patch2:		%{name}-XGUILOADPATH.diff
 Patch3:		%{name}-inc_fix.patch
+URL:		http://www.informatik.uni-stuttgart.de/ipvr/bv/projekte/snns/snns.html
 BuildRequires:	bison
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
