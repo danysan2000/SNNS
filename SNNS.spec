@@ -1,8 +1,9 @@
+
 Summary:	Stuttgart Neural Network Simulator
 Summary(pl):	Sztutgardzki symulator sieci neuronowych
 Name:		SNNS
 Version:	4.2
-Release:	1
+Release:	1.0
 License:	Free Software
 Group:		X11/Applications
 Source0:	ftp://ftp.informatik.uni-stuttgart.de/pub/SNNS/%{name}v%{version}.tar.gz
@@ -88,7 +89,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc Readme* tools/doc/* %{name}v%{version}.Manual.ps
+%doc Readme* 
 %config %{_libdir}/%{name}/default.cfg
 %{_libdir}/%{name}/help.hdoc
 %attr(755,root,root) %{_bindir}/*
@@ -96,7 +97,8 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man1/*
 %{_desktopdir}/*
 
-#%files doc
-#%defattr(644,root,root,755)
-#%docdir %{_libdir}/SNNS/SNNSinfo
+%files doc
+%defattr(644,root,root,755)
+%docdir %{_libdir}/SNNS/SNNSinfo
+%doc tools/doc/* %{name}v%{version}.Manual.ps
 #%doc %{_libdir}/SNNS/SNNSinfo/*
