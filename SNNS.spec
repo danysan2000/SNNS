@@ -11,6 +11,7 @@ Source2:	ftp://ftp.informatik.uni-stuttgart.de/pub/SNNS/%{name}v%{version}.Manua
 # Source2-md5:	1df5e14726c88d01be9f67e4590600a9
 #Source3:	ftp://ftp.informatik.uni-stuttgart.de/pub/SNNS/%{name}info-1.03.tar.gz
 # Source3-md5:	c2a99f0294bd02e5f3bfdff6bf16469a
+Source4:        %{name}.desktop
 Patch0:		%{name}-include.patch
 Patch1:		%{name}-DESTDIR.patch
 Patch2:		%{name}-XGUILOADPATH.diff
@@ -61,7 +62,7 @@ Ten pakiet zawiera dokumentacjê w HTML-u i postscripcie.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/%{name},%{_mandir}/man1}
+install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/%{name},%{_mandir}/man1,%{_desktopdir}}
 
 %{__make} install \
 		DESTDIR=$RPM_BUILD_ROOT
@@ -69,6 +70,8 @@ install -d $RPM_BUILD_ROOT{%{_bindir},%{_libdir}/%{name},%{_mandir}/man1}
 cp -af help.hdoc default.cfg examples $RPM_BUILD_ROOT%{_libdir}/%{name}
 install man/man1/* $RPM_BUILD_ROOT%{_mandir}/man1
 install %{SOURCE2} .
+install %{SOURCE4} $RPM_BUILD_ROOT%{_desktopdir}
+
 gunzip %{name}v%{version}.Manual.ps.gz
 
 cd $RPM_BUILD_ROOT%{_bindir}
@@ -91,6 +94,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/*
 %attr(755,root,root) %{_libdir}/%{name}/examples
 %{_mandir}/man1/*
+%{_desktopdir}/*
 
 #%files doc
 #%defattr(644,root,root,755)

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=SNNS
+Comment=Stuttgart Neural Network Simulator
+Comment[pl]=Sztutgardzki symulator sieci neuronowych
+Exec=/usr/bin/snns
+Icon=
+Terminal=false
+MultipleArgs=false
+Type=Application
+Categories=Education;
+InitialPreference=2
+Encoding=UTF-8
+# vi: encoding=utf-8
