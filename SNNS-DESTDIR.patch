@@ -1,0 +1,38 @@
+diff -urN SNNSv4.2.orig/man/Makefile SNNSv4.2/man/Makefile
+--- SNNSv4.2.orig/man/Makefile	1998-03-19 13:57:52.000000000 +0100
++++ SNNSv4.2/man/Makefile	2003-08-23 12:30:42.000000000 +0200
+@@ -52,8 +52,8 @@
+ 
+ install-one: $(MAN1DIR)
+ 	for mantarget in $(MAN1FILES) ; do \
+-            if [ ! -e $(MAN1DIR)/$$mantarget ] ; then \
+-               $(INSTALL_DATA) man1/$$mantarget $(MAN1DIR) ; \
++            if [ ! -e $(DESTDIR)$(MAN1DIR)/$$mantarget ] ; then \
++               $(INSTALL_DATA) man1/$$mantarget $(DESTDIR)$(MAN1DIR) ; \
+             fi ; \
+         done
+ 
+diff -urN SNNSv4.2.orig/tools/sources/Makefile SNNSv4.2/tools/sources/Makefile
+--- SNNSv4.2.orig/tools/sources/Makefile	1998-09-03 15:37:47.000000000 +0200
++++ SNNSv4.2/tools/sources/Makefile	2003-08-23 12:31:55.000000000 +0200
+@@ -114,7 +114,7 @@
+ 
+ install: tools $(TOOLSBINDIR)
+ 	for tooltarget in $(TOOLS_PRG) $(KRTOOLS_PRG) $(BATCH_PRG) ; do \
+-            $(INSTALL_PROGRAM) $$tooltarget $(TOOLSBINDIR) ; \
++            $(INSTALL_PROGRAM) $$tooltarget $(DESTDIR)$(TOOLSBINDIR) ; \
+         done
+ 
+ install-strip:
+diff -urN SNNSv4.2.orig/xgui/sources/Makefile SNNSv4.2/xgui/sources/Makefile
+--- SNNSv4.2.orig/xgui/sources/Makefile	1998-09-03 15:39:03.000000000 +0200
++++ SNNSv4.2/xgui/sources/Makefile	2003-08-23 12:31:24.000000000 +0200
+@@ -150,7 +150,7 @@
+ 	-mkdir $(XGUIBINDIR)
+ 
+ install: all $(XGUIBINDIR)
+-	$(INSTALL_PROGRAM) $(PROGRAM) $(XGUIBINDIR)
++	$(INSTALL_PROGRAM) $(PROGRAM) $(DESTDIR)$(XGUIBINDIR)
+ 
+ install-strip:
+ 	$(MAKE) INSTALL_PROGRAM='$(INSTALL_PROGRAM) -s' install
