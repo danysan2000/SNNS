@@ -64,7 +64,7 @@ $RPM_BUILD_ROOT%{_prefix}/{bin,lib/SNNS/examples}
 
 %{__make} -C kernel/sources install \
 		DESTDIR=$RPM_BUILD_ROOT
-		
+
 %{__make} -C xgui/sources install \
 		DESTDIR=$RPM_BUILD_ROOT
 
