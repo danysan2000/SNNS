@@ -1,3 +1,6 @@
+
+%define ftppath ftp://ftp.informatik.uni-stuttgart.de/pub/SNNS
+
 Summary:	Stuttgart Neural Network Simulator
 Summary(de):	Stuttgart Neural Network Simulator
 Summary(pl):	Stuttgart Neural Network Simulator
@@ -6,10 +9,9 @@ Version:	4.1
 Release:	0.1
 License:	Free Software
 Group:		X11/Applications
-%define ftppath ftp://ftp.informatik.uni-stuttgart.de/pub/SNNS
-Source0:	%{ftppath}/%{name}v%{PACKAGE_VERSION}.tar.gz
+Source0:	%{ftppath}/%{name}v%{version}.tar.gz
 # Source0-md5:	6385faf45eec7bfba67d7024c31d1ac0
-Source2:	%{ftppath}/%{name}v%{PACKAGE_VERSION}.Manual.ps.gz
+Source2:	%{ftppath}/%{name}v%{version}.Manual.ps.gz
 # Source2-md5:	09431050aa7c3c77f55751566149c853
 Source3:	%{ftppath}/%{name}info-1.03.tar.gz
 # Source3-md5:	c2a99f0294bd02e5f3bfdff6bf16469a
