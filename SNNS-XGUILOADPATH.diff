@@ -1,15 +1,3 @@
-diff -urN SNNSv4.1/rpc/sources/ui_mainP.c SNNSv4.1.me/rpc/sources/ui_mainP.c
---- SNNSv4.1/rpc/sources/ui_mainP.c	Fri Dec  1 00:00:00 1995
-+++ SNNSv4.1.me/rpc/sources/ui_mainP.c	Mon Aug  4 23:53:48 1997
-@@ -1476,6 +1476,8 @@
-     if (NOT ui_fileExist(hdoc,0)) {
- 	if (getenv("XGUILOADPATH") != NULL) 
- 	    sprintf(hdoc, "%s/help.hdoc", getenv("XGUILOADPATH"));
-+	else
-+		sprintf(hdoc, "%s/help.hdoc", "/usr/lib/SNNS" );
- 	if (NOT ui_fileExist(hdoc,0)) {
- 	    ui_confirmOk("Can't display help. <help.hdoc> not found.");
-             ui_helpOk = FALSE;
 diff -urN SNNSv4.1/xgui/sources/ui_fileP.c SNNSv4.1.me/xgui/sources/ui_fileP.c
 --- SNNSv4.1/xgui/sources/ui_fileP.c	Fri Dec  1 00:00:00 1995
 +++ SNNSv4.1.me/xgui/sources/ui_fileP.c	Mon Aug  4 23:53:20 1997
