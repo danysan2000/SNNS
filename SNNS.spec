@@ -3,7 +3,7 @@ Summary:	Stuttgart Neural Network Simulator
 Summary(pl):	Sztutgardzki symulator sieci neuronowych
 Name:		SNNS
 Version:	4.2
-Release:	1.0
+Release:	1
 License:	Free Software
 Group:		X11/Applications
 Source0:	ftp://ftp.informatik.uni-stuttgart.de/pub/SNNS/%{name}v%{version}.tar.gz
