@@ -13,7 +13,7 @@ Source0:	%{ftppath}/%{name}v%{version}.tar.gz
 # Source0-md5:	6385faf45eec7bfba67d7024c31d1ac0
 Source2:	%{ftppath}/%{name}v%{version}.Manual.ps.gz
 # Source2-md5:	09431050aa7c3c77f55751566149c853
-Source3:	%{ftppath}/%{name}info-1.03.tar.gz
+#Source3:	%{ftppath}/%{name}info-1.03.tar.gz
 # Source3-md5:	c2a99f0294bd02e5f3bfdff6bf16469a
 Patch1:		%{name}-config.diff
 Patch2:		%{name}-XGUILOADPATH.diff
@@ -84,11 +84,11 @@ done
 cd $RPM_BUILD_ROOT%{_prefix}/bin
 ln -fs xgui snns
 
-cd $RPM_BUILD_ROOT%{_libdir}/SNNS
-tar zopxf $RPM_SOURCE_DIR/SNNSinfo-1.03.tar.gz
-rm -rf SNNSinfo/UserManual.ps SNNSinfo/Icons/.xvpics
-cp -f $RPM_SOURCE_DIR/SNNSv%{version}.Manual.ps.gz SNNSinfo
-chown -R root.root SNNSinfo
+#cd $RPM_BUILD_ROOT%{_libdir}/SNNS
+#tar zopxf $RPM_SOURCE_DIR/SNNSinfo-1.03.tar.gz
+#rm -rf SNNSinfo/UserManual.ps SNNSinfo/Icons/.xvpics
+#cp -f $RPM_SOURCE_DIR/SNNSv%{version}.Manual.ps.gz SNNSinfo
+#chown -R root.root SNNSinfo
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -102,7 +102,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/SNNS/*/bin/pc_linux/*
 %attr(755,root,root) %{_libdir}/SNNS/examples
 
-%files doc
-%defattr(644,root,root,755)
-%docdir %{_libdir}/SNNS/SNNSinfo
-%doc %{_libdir}/SNNS/SNNSinfo/*
+#%files doc
+#%defattr(644,root,root,755)
+#%docdir %{_libdir}/SNNS/SNNSinfo
+#%doc %{_libdir}/SNNS/SNNSinfo/*
