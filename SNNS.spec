@@ -21,28 +21,30 @@ Patch3:		%{name}-inc_fix.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description 
-%{name} (Stuttgart Neural Network Simulator) is a nuron network simulator
+SNNS (Stuttgart Neural Network Simulator) is a neuron network
+simulator.
 
 %description -l de
-%{name} (Stuttgart Neural Network Simulator) ist ein Simulationsprogramm
+SNNS (Stuttgart Neural Network Simulator) ist ein Simulationsprogramm
 für Neuronal Netzwerk.
 
 %description -l pl
-%{name} (Stuttgar Neural Network Simulator) jest symulatorem sieci nuronwych.
+SNNS (Stuttgar Neural Network Simulator) jest symulatorem sieci
+neuronwych.
 
 %package doc
 Summary:	SNNS-Dokomentationen
 Group:		X11/Applications
 
-%desc 
-Documentation for %{name} in html and postscript.
+%description doc
+Documentation for SNNS in HTML and postscript.
 
-%description -l de doc
-Dieses Paket enthält die Dokumentationen in html und
+%description doc -l de
+Dieses Paket enthält die Dokumentationen in HTML und
 Postscript-Format.
 
-%description -l pl
-Ten pakiet zawiera dokumentacje w htmlu i postscripcie.
+%description doc -l pl
+Ten pakiet zawiera dokumentacje w HTMLu i postscripcie.
 
 %prep
 %setup -q -n %{name}v%{version}
