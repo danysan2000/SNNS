@@ -1,0 +1,12 @@
+diff -urN SNNSv4.2.orig/tools/sources/symtab.c SNNSv4.2/tools/sources/symtab.c
+--- SNNSv4.2.orig/tools/sources/symtab.c	1998-09-03 15:37:59.000000000 +0200
++++ SNNSv4.2/tools/sources/symtab.c	2003-08-22 15:11:18.000000000 +0200
+@@ -31,7 +31,7 @@
+ #include "glob_typ.h"         /* SNNS-Kernel: Global Datatypes and Constants */
+ #include "error.h"
+ #include "memory.h"           /* for re_malloc */
+-
++#include <values.h>
+ 
+ /*****************************************************************************
+   FUNCTION : st_init
