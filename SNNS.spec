@@ -1,4 +1,3 @@
-
 Summary:	Stuttgart Neural Network Simulator
 Summary(pl):	Sztutgardzki symulator sieci neuronowych
 Name:		SNNS
@@ -32,7 +31,9 @@ SNNS (Stuttgart Neural Network Simulator) jest symulatorem sieci
 neuronowych.
 
 %package doc
-Summary:	SNNS-Dokomentationen
+Summary:	SNNS documentation
+Summary(de):	SNNS-Dokomentationen
+Summary(pl):	Dokumentacja do SNNS
 Group:		X11/Applications
 
 %description doc
@@ -43,7 +44,7 @@ Dieses Paket enthält die Dokumentationen in HTML und
 Postscript-Format.
 
 %description doc -l pl
-Ten pakiet zawiera dokumentacje w HTMLu i postscripcie.
+Ten pakiet zawiera dokumentacjê w HTML-u i postscripcie.
 
 %prep
 %setup -q -n %{name}v%{version}
