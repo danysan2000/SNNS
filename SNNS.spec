@@ -20,7 +20,7 @@ Patch2:		%{name}-XGUILOADPATH.diff
 Patch3:		%{name}-inc_fix.patch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%description 
+%description
 SNNS (Stuttgart Neural Network Simulator) is a neuron network
 simulator.
 
@@ -63,7 +63,7 @@ install -d $RPM_BUILD_ROOT%{_libdir}/SNNS/{kernel,tools,xgui}/bin/pc_linux \
 $RPM_BUILD_ROOT%{_prefix}/{bin,lib/SNNS/examples}
 
 %{__make} -C kernel/sources install \
-		DESTDIR=$RPM_BUILD_ROOT 
+		DESTDIR=$RPM_BUILD_ROOT
 		
 %{__make} -C xgui/sources install \
 		DESTDIR=$RPM_BUILD_ROOT
