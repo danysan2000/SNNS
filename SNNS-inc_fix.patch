@@ -1,0 +1,13 @@
+--- SNNSv4.1/xgui/sources/ui.h.orig	Tue Jul 22 14:37:00 2003
++++ SNNSv4.1/xgui/sources/ui.h	Tue Jul 22 14:37:15 2003
+@@ -21,8 +21,8 @@
+ 
+ ******************************************************************************/
+ 
+-#ifndef __ui
+-#define __ui
++#ifndef __ui_h
++#define __ui_h
+ 
+ /* X11 */
+ 
