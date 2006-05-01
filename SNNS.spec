@@ -1,4 +1,3 @@
-
 Summary:	Stuttgart Neural Network Simulator
 Summary(pl):	Sztutgardzki symulator sieci neuronowych
 Name:		SNNS
@@ -37,7 +36,7 @@ neuronowych.
 Summary:	SNNS documentation
 Summary(de):	SNNS-Dokomentationen
 Summary(pl):	Dokumentacja do SNNS
-Group:		X11/Applications
+Group:		Documentation
 
 %description doc
 Documentation for SNNS in HTML and postscript.
