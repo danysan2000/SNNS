@@ -10,7 +10,6 @@ Source0:	ftp://ftp.informatik.uni-stuttgart.de/pub/SNNS/%{name}v%{version}.tar.g
 Source2:	ftp://ftp.informatik.uni-stuttgart.de/pub/SNNS/%{name}v%{version}.Manual.ps.gz
 # Source2-md5:	1df5e14726c88d01be9f67e4590600a9
 #Source3:	ftp://ftp.informatik.uni-stuttgart.de/pub/SNNS/%{name}info-1.03.tar.gz
-# Source3-md5:	c2a99f0294bd02e5f3bfdff6bf16469a
 Source4:        %{name}.desktop
 Patch0:		%{name}-include.patch
 Patch1:		%{name}-DESTDIR.patch
