@@ -1,5 +1,5 @@
 Summary:	Stuttgart Neural Network Simulator
-Summary(pl):	Sztutgardzki symulator sieci neuronowych
+Summary(pl.UTF-8):   Sztutgardzki symulator sieci neuronowych
 Name:		SNNS
 Version:	4.2
 Release:	1
@@ -23,29 +23,29 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 SNNS (Stuttgart Neural Network Simulator) is a neuron network
 simulator.
 
-%description -l de
+%description -l de.UTF-8
 SNNS (Stuttgart Neural Network Simulator) ist ein Simulationsprogramm
-für Neuronal Netzwerk.
+fÃ¼r Neuronal Netzwerk.
 
-%description -l pl
+%description -l pl.UTF-8
 SNNS (Stuttgart Neural Network Simulator) jest symulatorem sieci
 neuronowych.
 
 %package doc
 Summary:	SNNS documentation
-Summary(de):	SNNS-Dokomentationen
-Summary(pl):	Dokumentacja do SNNS
+Summary(de.UTF-8):   SNNS-Dokomentationen
+Summary(pl.UTF-8):   Dokumentacja do SNNS
 Group:		Documentation
 
 %description doc
 Documentation for SNNS in HTML and postscript.
 
-%description doc -l de
-Dieses Paket enthält die Dokumentationen in HTML und
+%description doc -l de.UTF-8
+Dieses Paket enthÃ¤lt die Dokumentationen in HTML und
 Postscript-Format.
 
-%description doc -l pl
-Ten pakiet zawiera dokumentacjê w HTML-u i postscripcie.
+%description doc -l pl.UTF-8
+Ten pakiet zawiera dokumentacjÄ™ w HTML-u i postscripcie.
 
 %prep
 %setup -q -n %{name}v%{version}
