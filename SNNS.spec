@@ -1,5 +1,5 @@
 Summary:	Stuttgart Neural Network Simulator
-Summary(pl.UTF-8):   Sztutgardzki symulator sieci neuronowych
+Summary(pl.UTF-8):	Sztutgardzki symulator sieci neuronowych
 Name:		SNNS
 Version:	4.2
 Release:	1
@@ -33,8 +33,8 @@ neuronowych.
 
 %package doc
 Summary:	SNNS documentation
-Summary(de.UTF-8):   SNNS-Dokomentationen
-Summary(pl.UTF-8):   Dokumentacja do SNNS
+Summary(de.UTF-8):	SNNS-Dokomentationen
+Summary(pl.UTF-8):	Dokumentacja do SNNS
 Group:		Documentation
 
 %description doc
